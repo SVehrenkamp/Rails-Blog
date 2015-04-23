@@ -1,0 +1,9 @@
+<h1>New Post #<%= @article.id %></h1>
+<div>
+	Title: <%= @article.title %>
+</div>
+<div>
+	Text: <%= @article.text %>
+</div>
+
+<%= button_to 'Back', articles_path, :class => 'btn btn-warning', :method => 'get' %>
